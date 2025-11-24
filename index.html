@@ -529,6 +529,7 @@
 
 
 
+
 <!-- SECCIÓN PROYECTOS-->
 <section class="page-section portfolio" id="portfolio">
     <div class="container">
@@ -541,212 +542,183 @@
             <div class="divider-custom-line"></div>
         </div>
 
-        <!-- Featured Project Badge -->
-        <div class="text-center mb-5">
-            <span class="badge bg-primary" style="font-size: 1.1rem; padding: 0.6rem 1.5rem;">
-                <i class="fas fa-rocket"></i> Featured Project
-            </span>
-        </div>
-
-        <!-- Portfolio Grid Items-->
+        <!-- Portfolio Grid - Single Featured Project -->
         <div class="row justify-content-center">
             
             <!-- ===================================================== -->
-            <!-- PROYECTO DESTACADO: dataViz-maestro -->
+            <!-- PROYECTO ÚNICO: dataViz-maestro -->
             <!-- ===================================================== -->
-            <div class="col-md-8 col-lg-8 mb-5">
-                <div class="card shadow-lg border-0" style="border-radius: 15px; overflow: hidden;">
+            <div class="col-lg-10 mb-5">
+                <div class="card shadow-lg border-0" style="border-radius: 20px; overflow: hidden;">
+                    
+                    <!-- Featured Badge -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x mt-3" style="z-index: 10;">
+                        <span class="badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); font-size: 1rem; padding: 0.7rem 2rem; border-radius: 50px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+                            <i class="fas fa-star"></i> Featured Portfolio Project
+                        </span>
+                    </div>
+
                     <!-- Imagen del proyecto -->
                     <div class="position-relative">
                         <img class="card-img-top" 
                              src="assets/img/portfolio/dataviz-maestro-preview.jpg" 
                              alt="dataViz-maestro BI Project"
-                             style="height: 350px; object-fit: cover;">
-                        <div class="position-absolute top-0 end-0 m-3">
-                            <span class="badge bg-success">Production-Ready</span>
-                            <span class="badge bg-info ms-2">SQL + Python + Power BI</span>
+                             style="height: 400px; object-fit: cover; margin-top: 2rem;">
+                        <div class="position-absolute bottom-0 end-0 m-3">
+                            <span class="badge bg-success me-1" style="font-size: 0.9rem;">Production-Ready</span>
+                            <span class="badge bg-info" style="font-size: 0.9rem;">SQL + Python + Power BI</span>
                         </div>
                     </div>
                     
                     <!-- Contenido de la tarjeta -->
-                    <div class="card-body p-4">
-                        <h3 class="card-title" style="color: #083e74;">
-                            <i class="fas fa-chart-line"></i> dataViz-maestro
-                        </h3>
-                        <h5 class="text-muted mb-3">Enterprise BI/Data Analytics Platform</h5>
+                    <div class="card-body p-5">
+                        <!-- Título principal -->
+                        <div class="text-center mb-4">
+                            <h2 style="color: #083e74; font-weight: bold;">
+                                <i class="fas fa-chart-line"></i> dataViz-maestro
+                            </h2>
+                            <h4 class="text-muted">Enterprise BI/Data Analytics Platform</h4>
+                        </div>
                         
-                        <p class="card-text">
+                        <!-- Descripción -->
+                        <p class="lead text-center mb-4">
                             <strong>End-to-end Business Intelligence solution</strong> demonstrating advanced SQL data warehousing, 
-                            Python ETL pipelines, and interactive dashboards across 5 business domains (Sales, Accounting, 
-                            Logistics, Production, HR).
+                            Python ETL pipelines, and interactive dashboards across 5 business domains.
                         </p>
 
-                        <!-- Key Features -->
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <p class="mb-2"><i class="fas fa-database text-primary"></i> <strong>21 SQL Tables</strong> (Star Schema)</p>
-                                <p class="mb-2"><i class="fas fa-code text-primary"></i> <strong>Python ETL</strong> (OOP Design)</p>
+                        <hr class="my-4">
+
+                        <!-- Key Features en Grid -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3" style="background: #e3f2fd; border-radius: 15px;">
+                                    <i class="fas fa-database fa-2x text-primary mb-2"></i>
+                                    <h4 class="mb-0" style="color: #083e74;">21</h4>
+                                    <small class="text-muted">SQL Tables</small>
+                                    <p class="mb-0 mt-1"><small>Star Schema</small></p>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <p class="mb-2"><i class="fas fa-chart-bar text-primary"></i> <strong>7 HTML Dashboards</strong></p>
-                                <p class="mb-2"><i class="fas fa-file-excel text-primary"></i> <strong>Power BI</strong> + DAX</p>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3" style="background: #e8f5e9; border-radius: 15px;">
+                                    <i class="fas fa-code fa-2x text-success mb-2"></i>
+                                    <h4 class="mb-0" style="color: #083e74;">43K+</h4>
+                                    <small class="text-muted">Records</small>
+                                    <p class="mb-0 mt-1"><small>Synthetic Data</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3" style="background: #fff3e0; border-radius: 15px;">
+                                    <i class="fas fa-chart-bar fa-2x text-warning mb-2"></i>
+                                    <h4 class="mb-0" style="color: #083e74;">7</h4>
+                                    <small class="text-muted">Dashboards</small>
+                                    <p class="mb-0 mt-1"><small>HTML + Power BI</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="p-3" style="background: #f3e5f5; border-radius: 15px;">
+                                    <i class="fas fa-briefcase fa-2x text-info mb-2"></i>
+                                    <h4 class="mb-0" style="color: #083e74;">5</h4>
+                                    <small class="text-muted">Domains</small>
+                                    <p class="mb-0 mt-1"><small>Business Areas</small></p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Tech Stack Badges -->
-                        <div class="mb-3">
-                            <span class="badge bg-secondary me-2">SQL Server</span>
-                            <span class="badge bg-secondary me-2">Python</span>
-                            <span class="badge bg-secondary me-2">Pandas</span>
-                            <span class="badge bg-secondary me-2">Power BI</span>
-                            <span class="badge bg-secondary me-2">Flask API</span>
-                            <span class="badge bg-secondary me-2">Bootstrap</span>
-                            <span class="badge bg-secondary me-2">Chart.js</span>
+                        <div class="mb-4 text-center">
+                            <h6 class="text-uppercase text-muted mb-3">Technologies Used</h6>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">SQL Server</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Python</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Pandas</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Power BI</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Flask API</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Bootstrap 5</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Chart.js</span>
+                            <span class="badge bg-secondary me-2 mb-2" style="font-size: 0.9rem; padding: 0.5rem 1rem;">DAX</span>
                         </div>
 
-                        <!-- Metrics -->
-                        <div class="row text-center mb-3 p-3" style="background: #f8f9fa; border-radius: 10px;">
-                            <div class="col-3">
-                                <h4 class="mb-0" style="color: #083e74;">43K+</h4>
-                                <small>Records</small>
-                            </div>
-                            <div class="col-3">
-                                <h4 class="mb-0" style="color: #083e74;">5</h4>
-                                <small>Domains</small>
-                            </div>
-                            <div class="col-3">
-                                <h4 class="mb-0" style="color: #083e74;">100%</h4>
-                                <small>Portfolio-Ready</small>
-                            </div>
-                            <div class="col-3">
-                                <h4 class="mb-0" style="color: #083e74;">⭐</h4>
-                                <small>Featured</small>
+                        <hr class="my-4">
+
+                        <!-- Interactive Tutorial Section -->
+                        <div class="bg-light p-4 mb-4" style="border-radius: 15px; border-left: 5px solid #667eea;">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <i class="fas fa-graduation-cap fa-4x" style="color: #667eea;"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5 style="color: #083e74;" class="mb-2">
+                                        <i class="fas fa-book-open"></i> Interactive Learning Tutorial Included
+                                    </h5>
+                                    <p class="mb-3">
+                                        Complete Jupyter Notebook with <strong>10 sections</strong> of step-by-step explanations 
+                                        covering star schema design, Python ETL, SQL techniques, Power BI DAX, and more.
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary"><i class="fas fa-check"></i> Executable Code</span>
+                                        <span class="badge bg-success"><i class="fas fa-check"></i> Educational Graphics</span>
+                                        <span class="badge bg-info"><i class="fas fa-check"></i> Practical Exercises</span>
+                                        <span class="badge bg-warning text-dark"><i class="fas fa-check"></i> Best Practices</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Action Buttons -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div>
+                        <div class="row g-3 text-center">
+                            <!-- Primary Actions -->
+                            <div class="col-md-4">
                                 <a href="https://github.com/Jose-rw/dataViz-maestro" 
                                    target="_blank" 
-                                   class="btn btn-outline-dark me-2">
+                                   class="btn btn-dark btn-lg w-100">
                                     <i class="fab fa-github"></i> View Code
                                 </a>
-                                <a href="#" 
-                                   data-bs-toggle="modal" 
-                                   data-bs-target="#portfolioModalDataViz"
-                                   class="btn btn-primary">
-                                    <i class="fas fa-info-circle"></i> Learn More
-                                </a>
                             </div>
-                            <div>
+                            <div class="col-md-4">
                                 <a href="dataViz-maestro/html/index.html" 
                                    target="_blank" 
-                                   class="btn btn-success">
+                                   class="btn btn-success btn-lg w-100">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="col-md-4">
+                                <a href="#" 
+                                   data-bs-toggle="modal" 
+                                   data-bs-target="#portfolioModalDataViz"
+                                   class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-info-circle"></i> Learn More
+                                </a>
+                            </div>
 
-            <!-- ===================================================== -->
-            <!-- OTROS PROYECTOS -->
-            <!-- ===================================================== -->
-            
-            <!-- Portfolio Item: Data Quality Toolkit -->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <!-- Tutorial Actions -->
+                            <div class="col-12">
+                                <hr class="my-2">
+                                <h6 class="text-muted mb-3">
+                                    <i class="fas fa-book"></i> Access Interactive Tutorial
+                                </h6>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://nbviewer.org/github/Jose-rw/portfolio-website/blob/main/dataViz-maestro/tutorial/dataViz_maestro_TUTORIAL.ipynb" 
+                                   target="_blank" 
+                                   class="btn btn-outline-primary btn-lg w-100">
+                                    <i class="fas fa-eye"></i> View Tutorial
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://colab.research.google.com/github/Jose-rw/portfolio-website/blob/main/dataViz-maestro/tutorial/dataViz_maestro_TUTORIAL.ipynb" 
+                                   target="_blank" 
+                                   class="btn btn-outline-warning btn-lg w-100">
+                                    <i class="fas fa-play"></i> Run in Colab
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/Jose-rw/portfolio-website/blob/main/dataViz-maestro/tutorial/dataViz_maestro_TUTORIAL.ipynb" 
+                                   target="_blank" 
+                                   class="btn btn-outline-dark btn-lg w-100">
+                                    <i class="fab fa-github"></i> Download .ipynb
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/data-quality-toolkit.jpg" alt="Data Quality Toolkit" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">Data Quality Toolkit</h5>
-                        <p class="text-muted">Clinical Data Validation (Python + CDISC)</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Portfolio Item: Power BI Dashboards -->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/powerbi-dashboard.jpg" alt="Power BI Dashboards" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">Business Analytics Dashboards</h5>
-                        <p class="text-muted">Power BI + SQL Server + DAX</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item: Clinical Programming -->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/clinical-programming.jpg" alt="Clinical Programming" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">Clinical Data Programming</h5>
-                        <p class="text-muted">SDTM/ADaM + SAS + Regulatory</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item: Automation Solutions -->
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/automation.jpg" alt="Process Automation" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">Process Automation</h5>
-                        <p class="text-muted">Power Apps + Power Automate + SharePoint</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item: Python ETL -->
-            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/python-etl.jpg" alt="Python ETL" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">ETL Data Pipelines</h5>
-                        <p class="text-muted">Python + Pandas + SQL + APIs</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item: Bioinformatics -->
-            <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/bioinformatics.jpg" alt="Bioinformatics" />
-                    <div class="text-center mt-3">
-                        <h5 style="color: #083e74;">Bioinformatics Analytics</h5>
-                        <p class="text-muted">Genomics + R + Python + NGS</p>
                     </div>
                 </div>
             </div>
@@ -755,6 +727,7 @@
 
         <!-- GitHub Profile Link -->
         <div class="text-center mt-5">
+            <p class="text-muted mb-3">More projects coming soon. Check out my GitHub for additional work:</p>
             <a href="https://github.com/Jose-rw" 
                target="_blank" 
                class="btn btn-outline-dark btn-lg">
@@ -764,6 +737,7 @@
 
     </div>
 </section>
+<!-- FIN SECCIÓN PROYECTOS-->
 <!-- SECCIÓN PROYECTOS-->
         
 
